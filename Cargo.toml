@@ -1,0 +1,14 @@
+[package]
+name = "messager"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+rsa = "0.9.8" # For RSA encryption
+aes = "0.8.4" # For AES encryption
+rand = "0.8.0" # For random number generation
+base64 = "0.22.1" # For base64 encoding and decoding
+argon2 = "0.5" # For hashing password
+ron = "0.10.1" # Storage
+serde = { version = "1.0", features = ["derive"] } # Storage
+bincode = { version = "2.0.1", features = ["serde"] }
